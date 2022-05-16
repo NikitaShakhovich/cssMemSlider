@@ -9,22 +9,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "sans-serif", "serif";
+    font-weight: bold;
+    line-height: 1.5;
+    animation: open 5s forwards;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: #565454;
     color: rgb(93, 221, 176);
-    overflow: auto;
-    line-height: 1.5;
-    font-family: "sans-serif", "serif";
-    font-weight: bold;
-    animation: open 5s forwards;
 }
 
 .slider {
     margin: 0 auto;
-    max-width: 85vh;
+    max-width: 80vh;
     text-align: center;
 }
 
@@ -67,8 +66,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0.5rem 0 0 0;
     justify-content: space-around;
+    padding: 0.5rem 0 0 0;
 }
 
 .controls {
@@ -81,10 +80,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     width: 2rem;
     height: 2rem;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .description {

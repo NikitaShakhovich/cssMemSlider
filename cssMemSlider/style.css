@@ -5,14 +5,6 @@
 }
 
 body {
-    /*font-family: 'Roboto';*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-    /*font-size: 1.5em;*/
-    /*line-height: 1;*/
-    /*text-transform: none;*/
-    /*letter-spacing: normal;*/
-    /*direction: ltr;*/
     position: fixed;
     display: flex;
     align-items: center;
@@ -24,8 +16,6 @@ body {
     background: #565454;
     color: rgb(93, 221, 176);
     overflow: auto;
-    /*padding: 2vh 0 0 0;*/
-
 }
 
 .slider {
@@ -40,7 +30,6 @@ body {
     background: #16171A;
     border-radius: 5%;
     box-shadow: 0 4px 70px rgb(93, 221, 176);
-    /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);*/
 }
 
 .slider-container input {
@@ -94,9 +83,6 @@ body {
 
 .description {
     overflow: hidden;
-    /*display: flex;*/
-    /*flex: 0 0 auto;*/
-    /*width: 400%;*/
 }
 
 .description-wrapper {
@@ -133,15 +119,16 @@ label:hover span {
     background: rgb(255, 255, 255);
 }
 
+
 label:active span {
-    background-color: rgb(224, 59, 45);
-    border: 0.2em solid rgb(242, 244, 245);
+    background-color: black;
+    box-shadow: 0 0 0.3em 0.1em rgb(93, 221, 176);
 }
 
-#slide-1:checked ~ .slides-content label[for=slide-1] span,
-#slide-2:checked ~ .slides-content label[for=slide-2] span,
-#slide-3:checked ~ .slides-content label[for=slide-3] span,
-#slide-4:checked ~ .slides-content label[for=slide-4] span {
+#slide-1:checked ~ .slides-content label[for="slide-1"] span,
+#slide-2:checked ~ .slides-content label[for="slide-2"] span,
+#slide-3:checked ~ .slides-content label[for="slide-3"] span,
+#slide-4:checked ~ .slides-content label[for="slide-4"] span {
     background-color: transparent;
     border: 0.2rem solid rgb(93, 221, 176);
 }
@@ -181,24 +168,11 @@ label:active span {
 @media (max-width: 576px) {
     .slides-content {
         flex-direction: column-reverse;
-
     }
 
     .controls {
         align-self: center;
     }
-
-    /*.description {*/
-    /*    !*width: 100%;*!*/
-    /*}*/
-
-    /*body {*/
-    /*    font-size: 1.25em;*/
-    /*}*/
-
-    /*.slider {*/
-    /*    margin: 0.5vh auto;*/
-    /*}*/
 
     .controls label {
         width: 2rem;
@@ -206,6 +180,3 @@ label:active span {
         padding:  0.5rem;
     }
 }
-
-
-
